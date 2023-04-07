@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import UserInformation from "./UserInformation";
 
 export const AddNewUser = () => {
@@ -22,11 +22,7 @@ export const AddNewUser = () => {
   return (
     <div style={{ background: "#2ab92a", padding: 20 }}>
       <input type="text" onChange={doSomething} placeholder="Type your name" />
-      <input
-        type="number"
-        onChange={(d) => setAge(d.target.value)}
-        placeholder="Type your age"
-      />
+      <input type="number" onChange={(d) => setAge(d.target.value)} placeholder="Type your age" />
       <button onClick={foo}>Submit form</button>
       <UserInformation data={userData} />
     </div>
